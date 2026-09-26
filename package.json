@@ -1,0 +1,8 @@
+{
+  "name": "kinitopet-web",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "play": "node start-game.js"
+  }
+}
