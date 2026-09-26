@@ -220,7 +220,7 @@
 
 function checkThreadedWebAssemblySupport() {
 if (typeof SharedArrayBuffer === 'undefined' || !window.crossOriginIsolated) {
-throw new Error('This game needs cross-origin isolation. Open it through the included server instead of opening index.html directly.');
+throw new Error('This game needs cross-origin isolation. Configure your site to send COOP/COEP headers, then open the website URL instead of a local file.');
 }
 try {
 new WebAssembly.Memory({ initial: 1, maximum: 1, shared: true });
